@@ -31,12 +31,15 @@ paragrah default: 1.6
 #999
 #555
 #333
+-other:
+#69db7c
 
 ----- 5. SHADOWS
 
 
 ---- 6. BOARDER-RADIUS
 default: 10px
+medium:12px
 
 --- 7. WHITESPACE
 
@@ -166,4 +169,8 @@ body {
 
 .margin-rt-sm {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
 }
