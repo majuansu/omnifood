@@ -121,7 +121,7 @@
   font-weight: 500;
   text-align: center;
   margin-bottom: 2.4rem;
-  color: #999;
+  color: var(--gray-light);
 }
 
 .featured-logos {
@@ -142,7 +142,7 @@
 .step-number {
   font-size: 8.6rem;
   font-weight: 700;
-  color: var(--gray-light);
+  color: var(--gray-weak);
   margin-bottom: 1.2rem;
 }
 .step-description {
@@ -303,7 +303,7 @@
 
 .testimonial-name {
   font-size: 1.6rem;
-  color: var(--gray);
+  color: var(--gray-light);
 }
 
 .gallery {
@@ -325,4 +325,80 @@
 
 .gallery-item:hover img {
   transform: scale(1.1);
+}
+
+/*********** pricing section **************/
+.section-price {
+  padding: 9.6rem 0;
+}
+
+.price-box {
+  width: 74%;
+  border-radius: 12px;
+}
+.price-standard {
+  justify-self: end;
+  border: solid 3px var(--tint);
+  padding: 4.5rem;
+}
+
+.price-premium {
+  background-color: var(--tint);
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.price-premium::before {
+  content: "Best value";
+  text-transform: uppercase;
+  background-color: #fcc419;
+  color: var(--gray-dark);
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.7rem 7rem;
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  transform: rotate(45deg);
+}
+
+.price-premium:hover {
+  transform: translateY(-2rem);
+}
+
+.price-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.price-title {
+  color: var(--shade);
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.price-amount {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: var(--gray-dark);
+  margin-bottom: 1.6rem;
+}
+
+.price-amount span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.price-note {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--gray-light);
+}
+
+.price-signup {
+  text-align: center;
+  margin-top: 4.8rem;
 }
