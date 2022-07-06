@@ -193,12 +193,13 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
   overflow: hidden;
+  transition: all 0.3s;
 }
 
-.meal-img {
-  width: 100%;
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.065);
 }
-
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
@@ -257,4 +258,12 @@
   color: var(--main);
   height: 2.4rem;
   width: 2.4rem;
+}
+.meal-img {
+  width: 100%;
+}
+
+.all-receipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
