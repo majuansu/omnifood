@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--tint);
+  background-color: var(--tint-90);
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
@@ -34,7 +34,7 @@
 
 .main-nav-link:active,
 .main-nav-link:hover {
-  color: var(--shade);
+  color: var(--shade-10);
 }
 
 .main-nav-link.nav-cta:link,
@@ -47,12 +47,12 @@
 
 .main-nav-link.nav-cta:active,
 .main-nav-link.nav-cta:hover {
-  background-color: var(--shade);
+  background-color: var(--shade-10);
 }
 /*********** hero section **************/
 
 .section-hero {
-  background: var(--tint);
+  background: var(--tint-90);
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -94,7 +94,7 @@
   height: 4.8rem;
   margin-right: -1.6rem;
   border-radius: 50%;
-  border: 3px solid var(--tint);
+  border: 3px solid var(--tint-90);
 }
 
 .delivered-imgs img:last-child {
@@ -170,7 +170,7 @@
 .step-img-box::before {
   width: 60%;
   padding-bottom: 60%;
-  background-color: var(--tint);
+  background-color: var(--tint-90);
   z-index: -2;
 }
 
@@ -271,7 +271,7 @@
 
 /*********** testimonial section **************/
 .section-testimonial {
-  background-color: var(--tint);
+  background-color: var(--tint-90);
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
@@ -338,12 +338,12 @@
 }
 .price-standard {
   justify-self: end;
-  border: solid 3px var(--tint);
+  border: solid 3px var(--tint-90);
   padding: 4.5rem;
 }
 
 .price-premium {
-  background-color: var(--tint);
+  background-color: var(--tint-90);
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
@@ -373,7 +373,7 @@
   margin-bottom: 4.8rem;
 }
 .price-title {
-  color: var(--shade);
+  color: var(--shade-10);
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -415,7 +415,7 @@
   color: var(--main);
   display: inline-block;
   padding: 2rem;
-  background-color: var(--tint);
+  background-color: var(--tint-90);
   border-radius: 50%;
   margin-bottom: 3.2rem;
 }
@@ -428,4 +428,91 @@
 .feature-description {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/*********** sign-up section **************/
+.section-signup {
+  padding: 9.6rem 0;
+}
+.signup {
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--tint-20),
+    var(--main)
+  );
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.signup-text-box {
+  color: var(--shade-70);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.signup .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.signup-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem 3.2rem;
+}
+.signup-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-family: inherit;
+  color: inherit;
+  background-color: var(--tint-90);
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form input::placeholder {
+  color: var(--gray-light);
+}
+
+.signup-form button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--shade-70);
+  color: var(--tint-90);
+  align-self: end;
+  padding: 1.2rem;
+  transition: all 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: var(--white);
+  color: var(--shade-70);
+}
+.signup-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(230, 121, 25, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../images/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }
