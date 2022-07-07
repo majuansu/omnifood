@@ -52,6 +52,44 @@
   }
   .hero {
     grid-template-columns: 1fr;
+    padding: 0 8rem;
+    text-align: center;
+    gap: 6.4rem;
+  }
+
+  .delivered {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .featured-logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonial {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .signup {
+    grid-template-columns: 60fr 40fr;
+  }
+  .signup-form {
+    grid-template-columns: 1fr;
+  }
+  .signup-form button {
+    margin-top: 1.6rem;
   }
 }
 
