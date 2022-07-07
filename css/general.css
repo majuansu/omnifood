@@ -97,8 +97,7 @@ body {
 
 .grid {
   display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
+  gap: 9.6rem 6.4rem;
 }
 
 .grid:not(:last-child) {

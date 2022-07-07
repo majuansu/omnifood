@@ -1,0 +1,67 @@
+/* below 1340px smaller desktops */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/***** Below 1200px (Landscape tables)  *****/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    gap: 6.4rem 4.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 6.4rem;
+  }
+
+  .testimonial-box {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/***** Below 944px (Tables)  *****/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 
+36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 
+/ 64 / 80 / 96 / 128
+*/

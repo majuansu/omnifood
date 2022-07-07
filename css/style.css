@@ -20,7 +20,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: rem;
 }
 
 .main-nav-link:link,
@@ -284,9 +284,7 @@
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* gap: 4.8rem 9.6rem; */
-  row-gap: 4.8rem;
-  column-gap: 9.6rem;
+  gap: 4.8rem 9.6rem;
 }
 
 .testimonial-img {
@@ -507,12 +505,6 @@
   color: var(--shade-70);
 }
 .signup-img-box {
-  /* background-image: linear-gradient(
-      to right bottom,
-      rgba(230, 121, 25, 0.35),
-      rgba(230, 125, 34, 0.35)
-    ),
-    url("../images/eating.jpg"); */
   background-image: linear-gradient(
       to right bottom,
       var(--main-op),
