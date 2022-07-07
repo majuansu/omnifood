@@ -54,16 +54,20 @@ medium:12px
 */
 
 :root {
-  --main: #e67e22;
-  --shade-10: #cf711f;
-  --shade-70: #45260a;
-  --tint-90: #fdf2e9;
-  --tint-20: #eb984e;
+  --main: #66b539;
+  --tint-90: #f0f8eb;
+  --tint-80: #e0f0d7;
+  --tint-20: #85c461;
+
+  --shade-10: #5ca333;
+  --shade-70: #1f3611;
   --white: #fff;
   --gray: #555;
   --gray-dark: #333;
+  --gray-medium: #757575;
   --gray-light: #888;
   --gray-weak: #ddd;
+  --main-op: #66b53959; /*35% opacity - '59'*/
 }
 
 * {
@@ -124,6 +128,7 @@ body {
 .heading-tertiary {
   font-weight: 700;
   color: var(--gray-dark);
+
   letter-spacing: -0.5px;
 }
 
@@ -229,8 +234,7 @@ body {
 /* reset focus state  */
 *:focus {
   outline: none;
-  outline: 0.4rem dotted var(--main);
-  outline-offset: 0.8rem;
+  box-shadow: 0 0 0 0.7rem var(--main-op);
 }
 
 /* helper/setting classes  */
