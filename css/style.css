@@ -432,7 +432,7 @@
 
 /*********** sign-up section **************/
 .section-signup {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.6rem;
 }
 .signup {
   display: grid;
@@ -516,3 +516,92 @@
   background-size: cover;
   background-position: center;
 }
+
+/*********** footer section **************/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: solid 1px #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-top: auto;
+  color: #757575;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--gray);
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #757575;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.6rem;
+  /* margin-bottom: 2.4rem; */
+  color: #757575;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--gray);
+}
+
+/* 
+
+
+.social-icons li{
+  display:inline-block;
+}
+
+
+ */

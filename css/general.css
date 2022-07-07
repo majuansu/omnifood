@@ -32,6 +32,9 @@ paragrah default: 1.6
 #555
 #333
 #6f6f6f
+#757575 (lightest gray allowed on #fff)
+
+
 -other:
 #69db7c
 
@@ -106,6 +109,10 @@ body {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .grid--center-v {
