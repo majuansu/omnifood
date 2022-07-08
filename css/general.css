@@ -80,6 +80,9 @@ medium:12px
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* this does Not work on Safari  */
+  scroll-behavior: smooth;
 }
 
 body {
