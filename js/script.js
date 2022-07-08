@@ -2,7 +2,7 @@
 const year = document.querySelector(".current-year");
 year.textContent = new Date().getFullYear();
 
-/////// Make mbile nav menu button work
+/////// Mobile navigation
 const navbutton = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".header");
 
@@ -38,3 +38,28 @@ allLinks.forEach((link) => {
     header.classList.remove("nav-open");
   });
 });
+
+///// Sticky navigation
+const sectionHero = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHero);
