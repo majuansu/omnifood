@@ -37,7 +37,7 @@
   }
 
   .hero {
-    gap: 6.4rem;
+    gap: 4.8rem;
   }
 
   .testimonial-box {
@@ -53,16 +53,18 @@
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
-    text-align: center;
     gap: 6.4rem;
   }
-
-  .delivered {
-    justify-content: center;
-    margin-top: 3.2rem;
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
   }
   .hero-img {
     width: 60%;
+  }
+  .delivered {
+    justify-content: center;
+    margin-top: 3.2rem;
   }
   .featured-logos img {
     height: 2.4rem;
@@ -154,7 +156,7 @@
   }
 
   .diets {
-    grid-column: span 2;
+    grid-column: 1 / -1;
     justify-self: center;
   }
 
@@ -180,9 +182,68 @@
     grid-row: 2;
     grid-column: span 3;
   }
-  /* end  */
 }
 
+/****** below 544px (phones) ****** */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+
+  .featured-logos img {
+    height: 1.2rem;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .signup {
+    grid-template-columns: 1fr;
+  }
+  .signup-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .signup-text-box {
+    padding: 3.2rem;
+  }
+}
 /**********Design Decisions************************
 
 - Font sizes (px)
