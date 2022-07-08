@@ -79,9 +79,11 @@ medium:12px
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;

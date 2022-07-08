@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--tint-90);
-
+  position: relative;
   /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
@@ -20,7 +20,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -48,6 +48,34 @@
 .main-nav-link.nav-cta:active,
 .main-nav-link.nav-cta:hover {
   background-color: var(--shade-10);
+}
+
+/* for mobil */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-mobile-nav ion-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: var(--gray-dark);
+}
+
+.icon-nav-close {
+  display: none;
+}
+
+/* when nav menu is open  */
+
+.nav-open .icon-nav-close {
+  display: block;
+}
+.nav-open .icon-nav-close {
+  display: block;
 }
 /*********** hero section **************/
 
