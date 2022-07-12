@@ -1,4 +1,15 @@
-# Omnifood
+# About This Project
+
+This is a practice project about a Real-World Responsive Website with HTML and CSS.\
+
+It's a website introducing a food delivery subscription called Omnifood. The project is based on Udemy course (: Build Responsive Real-World Websites with HTML and CSS: https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/) but I've coded it step by step by myself and implemented some changes.\
+
+## Hight lights
+
+- CSS Grid and Flexbox for layout.
+- Media query for responsive design.
+
+# Project Content Requirement
 
 ## About Omnifood
 
